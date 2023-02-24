@@ -1,4 +1,28 @@
 import cv2
+from twilio.rest import Client
+
+# def sendMsg(count):
+#     account_sid = 'YOUR_ACCOUNT_SID'
+#     auth_token = 'YOUR_AUTH_TOKEN'
+
+#     # Your WhatsApp phone number and Twilio phone number
+#     whatsapp_number = 'whatsapp:+1234567890'
+#     twilio_number = '+1234567890'
+
+#     # Create a Twilio client object
+#     client = Client(account_sid, auth_token)
+
+#     # Send a message containing the count to your WhatsApp number
+#     message = client.messages.create(
+#         body=f'There are {count} people in the video.',
+#         from_=twilio_number,
+#         to=whatsapp_number
+#     )
+
+#     # Print the message SID
+#     print(message.sid)
+
+
 count = 0
 
 video_capture = cv2.VideoCapture(0)
