@@ -14,7 +14,7 @@ def sendMsg(count):
 
     # Send a message containing the count to your WhatsApp number
     message = client.messages.create(
-        body=f'There are {count} people in the video.',
+        body=f'There are {count} people in the queue.',
         from_=twilio_number,
         to=whatsapp_number
     )
